@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# Popular Concert Venue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### An app to support the Udemy course [Testing Next.js Apps](https://www.udemy.com/course/nextjs-testing/)
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Run `npm install`
+1. Run `cp .env.development.local_template .env.development.local`
+1. Run `cp .env.local_template .env.local`
+1. In _.env.local_:
 
-## Expanding the ESLint configuration
+- add long, hard-to-guess strings as the values for `NEXTAUTH_SECRET` and `REVALIDATION_SECRET`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - command to generate a random string: `openssl rand -base64 32`
 
-- Configure the top-level `parserOptions` property like this:
+## Running the App
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Run `npm run dev`. The app will be found at [http://localhost:3000]

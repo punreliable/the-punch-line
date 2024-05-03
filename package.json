@@ -46,6 +46,7 @@
     "@types/jsonwebtoken": "^8.5.8",
     "@types/pbkdf2": "^3.1.0",
     "@types/react": "17.0.38",
+    "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "babel-jest": "27.4.5",

@@ -7,7 +7,7 @@ export default function Home(): React.ReactElement {
   return (
     <>
       <Head>
-        <title>Popular Concert Venue</title>
+        <title>The Punch Line</title>
       </Head>
       <Box>
         <SplashImage />

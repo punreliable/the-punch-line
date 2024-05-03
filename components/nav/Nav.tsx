@@ -19,6 +19,7 @@ export function NavBar(): React.ReactElement {
     { display: "Bands", route: routes.bands },
     { display: isLoggedIn ? userName : "Sign In", route: routes.user },
   ];
+  
   return (
     <Box bg="rgba(60, 60, 60, 0.6)" px={4} style={{ fontFamily: "Unica One" }}>
       <Flex h={16} alignItems="center" justify="space-between">
@@ -42,5 +43,6 @@ export function NavBar(): React.ReactElement {
         </HStack>
       </Flex>
     </Box>
-  );
+  )
+
 }

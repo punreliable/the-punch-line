@@ -1,7 +1,7 @@
-import { Box, Heading } from "@chakra-ui/react";
-import Head from "next/head";
+import { Box, Heading } from "@chakra-ui/react"
+import Head from "next/head"
 
-import { SplashImage } from "@/components/home/SplashImage";
+import { SplashImage } from "@/components/home/SplashImage"
 
 export default function Home(): React.ReactElement {
   return (
@@ -19,10 +19,10 @@ export default function Home(): React.ReactElement {
           m={10}
           alignSelf="center"
         >
-          <Heading textAlign="center" textColor="gray.100">
+          <Heading textAlign="center" textColor="purple.100">
             Welcome to
             <br />
-            Popular Concert Venue
+            The Punch Line
           </Heading>
         </Box>
       </Box>
